@@ -6,6 +6,13 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
+import { Uploader } from '@irys/upload';
+import { Solana } from '@irys/upload-solana';
+
+const getIrysUploader = async () => {
+	const irysUploader = await Uploader(Solana)
+}
+
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
